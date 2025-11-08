@@ -1,0 +1,148 @@
+.experience-detail-page {
+  min-height: 100vh;
+  padding: 6rem 2rem 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.back-button {
+  background: rgba(100, 255, 218, 0.1);
+  border: 1px solid rgba(100, 255, 218, 0.3);
+  color: #64ffda;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: rgba(100, 255, 218, 0.2);
+  transform: translateX(-5px);
+}
+
+.experience-detail-content {
+  color: white;
+}
+
+.company-name {
+  font-size: 2.5rem;
+  color: #64ffda;
+  margin-bottom: 0.5rem;
+}
+
+.role-title {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.date-range {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 2rem;
+}
+
+.subsection {
+  margin-bottom: 2rem;
+}
+
+.subsection-title {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.summary-list,
+.solutions-list,
+.context-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.summary-list li,
+.solutions-list li,
+.context-list li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.summary-list li::before,
+.solutions-list li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #64ffda;
+  font-size: 1.2rem;
+}
+
+.context-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #64ffda;
+  font-size: 1.2rem;
+}
+
+.summary-list li strong,
+.solutions-list li strong,
+.context-list li strong {
+  color: #64ffda;
+  font-weight: 600;
+}
+
+.experience-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+}
+
+.project-section {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-title {
+  font-size: 1.4rem;
+  color: #64ffda;
+  margin-bottom: 1.5rem;
+}
+
+code {
+  background: rgba(100, 255, 218, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  color: #64ffda;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .experience-detail-page {
+    padding: 5rem 1rem 2rem;
+  }
+  
+  .company-name {
+    font-size: 2rem;
+  }
+  
+  .role-title {
+    font-size: 1.2rem;
+  }
+  
+  .project-section {
+    padding: 1.5rem;
+  }
+}
