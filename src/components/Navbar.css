@@ -51,7 +51,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  background: #ffffff;
   transition: width 0.3s ease;
 }
 

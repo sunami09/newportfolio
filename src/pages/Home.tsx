@@ -12,7 +12,7 @@ const Home: React.FC = () => {
         </h1>
         <p className="home-subtitle">Software Engineer</p>
         <p className="home-description">
-          Building scalable systems and intelligent solutions
+          Python is just pseudocode that happens to run
         </p>
         <div className="home-buttons">
           <a href="/projects" className="btn btn-primary">View Projects</a>
