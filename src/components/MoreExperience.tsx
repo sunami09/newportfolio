@@ -1,42 +1,36 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import './Amazon2025.css';
+import './MoreExperience.css';
 
-const Amazon2025: React.FC = () => {
-  const navigate = useNavigate();
-
+const MoreExperience: React.FC = () => {
   return (
-    <div className="experience-detail-page">
-      <button className="back-button" onClick={() => navigate('/experience')}>
-        ← Back to Experience
-      </button>
-
-      <div className="experience-detail-content">
-        <h1 className="company-name">Amazon</h1>
-        <h2 className="role-title">Software Engineer Intern</h2>
+    <div className="more-experience">
+      <h2 className="more-experience-title">More Details</h2>
+      
+      <div className="experience-detail">
+        <h3 className="company-name">Amazon</h3>
+        <h4 className="role-title">Software Engineer Intern</h4>
         <p className="date-range">Aug 2025 - Present</p>
-      </div>
-
-      <div className="subsection" style={{ marginTop: '2.5rem', marginLeft: '0.5rem' }}>
-        <h3 className="subsection-title">Summary:</h3>
-        <ul className="summary-list">
-          <li>
-            Enhanced Task Retirement Manager workflows with <strong>completion and failure 
-            notifications</strong> using <strong>Java</strong>, giving customers real-time visibility into task 
-            retirements and reducing escalations by <strong>30%</strong> when ECS replacements failed.
-          </li>
-          <li>
-            Implemented notification solutions using <strong>AWS Lambda</strong>, <strong>EventBridge</strong>, 
-            <strong>Step Functions</strong>, and <strong>QLDB</strong>, integrating with <strong>DynamoDB</strong> and 
-            <strong> Silvermine</strong>, with batch API calls to reduce throttling across <strong>8M+ capacities</strong>.
-          </li>
-          <li>
-            Implemented a gradual <strong>5%-per-minute traffic shift</strong> for Fargate platform rollouts 
-            using <strong>Java</strong>, replacing the legacy 100% cutover, eliminating throttling incidents 
-            and reducing migration failure rates by <strong>15%</strong>.
-          </li>
-        </ul>
-      </div>
+        
+        <div className="subsection">
+          <h5 className="subsection-title">Summary:</h5>
+          <ul className="summary-list">
+            <li>
+              Enhanced Task Retirement Manager workflows with <strong>completion and failure 
+              notifications</strong> using <strong>Java</strong>, giving customers real-time visibility into task 
+              retirements and reducing escalations by <strong>30%</strong> when ECS replacements failed.
+            </li>
+            <li>
+              Implemented notification solutions using <strong>AWS Lambda</strong>, <strong>EventBridge</strong>, 
+              <strong>Step Functions</strong>, and <strong>QLDB</strong>, integrating with <strong>DynamoDB</strong> and 
+              <strong>Silvermine</strong>, with batch API calls to reduce throttling across <strong>8M+ capacities</strong>.
+            </li>
+            <li>
+              Implemented a gradual <strong>5%-per-minute traffic shift</strong> for Fargate platform rollouts 
+              using <strong>Java</strong>, replacing the legacy 100% cutover, eliminating throttling incidents 
+              and reducing migration failure rates by <strong>15%</strong>.
+            </li>
+          </ul>
+        </div>
 
         {/* PROJECT 1: COMPLETION NOTIFICATIONS */}
         <div className="project-section">
@@ -70,7 +64,7 @@ const Amazon2025: React.FC = () => {
             <ul className="solutions-list">
               <li>
                 Designed and implemented a <strong>Completion Notification Workflow</strong> that runs 
-                periodically via <strong>EventBridge timer at 6AM daily</strong> to identify completed 
+                periodically via <strong>EventBridge timer at 6AM UTC daily</strong> to identify completed 
                 task retirements and automatically remove corresponding customer notifications, providing 
                 real-time visibility into retirement status and closing the feedback loop.
               </li>
@@ -90,7 +84,7 @@ const Amazon2025: React.FC = () => {
               <li>
                 Maintained the existing TRM-RLM architecture while adding a feedback loop that tracks 
                 <code>customerTaskTerminatedAt</code> timestamps and workflow state pagination across 
-                <strong> 8M+ Fargate capacities</strong>, ensuring customers receive accurate completion 
+                <strong>8M+ Fargate capacities</strong>, ensuring customers receive accurate completion 
                 status for all retirement events.
               </li>
             </ul>
@@ -190,7 +184,24 @@ const Amazon2025: React.FC = () => {
           </div>
         </div>
       </div>
+      
+      <p className="experience-text">
+        Throughout my internship, I've had the opportunity to work on critical infrastructure projects 
+        that directly impact millions of AWS customers. Each project challenged me to design scalable 
+        solutions that balance customer experience, system reliability, and operational efficiency.
+      </p>
+      <p className="experience-text">
+        My experience spans across serverless computing architectures, event-driven systems, distributed 
+        databases, and large-scale orchestration workflows. I thrive in environments that demand both 
+        technical excellence and thoughtful consideration of customer impact.
+      </p>
+      <p className="experience-text">
+        Beyond coding, I'm passionate about writing maintainable systems, documenting architectural 
+        decisions, and building solutions that make a measurable difference in customer experience and 
+        platform reliability.
+      </p>
+    </div>
   );
 };
 
-export default Amazon2025;
+export default MoreExperience;

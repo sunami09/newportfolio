@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Experience from './pages/Experience';
 import Projects from './pages/Projects';
+import VideoStreaming from './pages/projects/VideoStreaming';
 import Contact from './pages/Contact';
 import Amazon2025 from './pages/experiences/Amazon2025';
 import Microsoft2025 from './pages/experiences/Microsoft2025';
@@ -26,6 +27,11 @@ function App() {
           <Route path="/experience/microsoft2024" element={<Microsoft2024 />} />
           <Route path="/experience/berkeleylab2023" element={<BerkeleyLab2023 />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/videoStreaming" element={<VideoStreaming />} />
+          <Route path="/projects/ecommerce" element={<div>E-Commerce Project Details</div>} />
+          <Route path="/projects/taskmanager" element={<div>Task Manager Project Details</div>} />
+          <Route path="/projects/weather" element={<div>Weather Dashboard Project Details</div>} />
+          <Route path="/projects/monitor" element={<div>Distributed Systems Monitor Project Details</div>} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

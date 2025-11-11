@@ -12,6 +12,9 @@ const Home: React.FC = () => {
         </h1>
         <p className="home-subtitle">Software Engineer</p>
         <p className="home-description">
+          The "T" is non-existent and my cat's name is CUDA.
+        </p>
+        <p className="home-description">
           Python is just pseudocode that happens to run
         </p>
         <div className="home-buttons">

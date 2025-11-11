@@ -27,7 +27,7 @@
   transform: translateX(-50%);
   width: 100px;
   height: 3px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #64ffda;
 }
 
 .contact-subtitle {
@@ -85,17 +85,18 @@
   flex: 1;
   text-align: center;
   padding: 0.6rem;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+  background: rgba(255, 255, 255, 0.05);
   color: white;
   text-decoration: none;
   border-radius: 10px;
-  border: 1px solid rgba(102, 126, 234, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
   font-size: 0.9rem;
 }
 
 .social-link:hover {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: rgba(100, 255, 218, 0.1);
+  border-color: #64ffda;
   transform: translateY(-2px);
 }
 
@@ -105,6 +106,111 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 2rem;
+}
+
+.email-animation {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+}
+
+.email-mockup {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.email-header {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.email-buttons {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.email-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.email-btn.red {
+  background: #ff5f56;
+}
+
+.email-btn.yellow {
+  background: #ffbd2e;
+}
+
+.email-btn.green {
+  background: #27c93f;
+}
+
+.email-title {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.email-body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.email-field {
+  display: flex;
+  margin-bottom: 1rem;
+  font-family: 'Courier New', monospace;
+}
+
+.field-label {
+  color: rgba(255, 255, 255, 0.6);
+  min-width: 80px;
+  font-size: 0.95rem;
+}
+
+.field-value {
+  color: #64ffda;
+  font-size: 0.95rem;
+}
+
+.email-message {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  min-height: 80px;
+  flex: 1;
+}
+
+.cursor {
+  color: #64ffda;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
 }
 
 .form-group {
@@ -131,7 +237,7 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #64ffda;
   background: rgba(255, 255, 255, 0.08);
 }
 
@@ -143,8 +249,8 @@
 .submit-btn {
   width: 100%;
   padding: 1rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #64ffda;
+  color: #0a192f;
   border: none;
   border-radius: 10px;
   font-size: 1rem;
@@ -155,7 +261,8 @@
 
 .submit-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 10px 25px rgba(100, 255, 218, 0.4);
+  background: #52d4c4;
 }
 
 @media (max-width: 768px) {
