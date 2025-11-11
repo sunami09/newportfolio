@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './VideoStreaming.css';
-import UploadPipelineDiagram from '../../components/UploadPipelineDiagram';
 
 const VideoStreaming: React.FC = () => {
   const navigate = useNavigate();
