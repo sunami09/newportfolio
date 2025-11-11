@@ -19,7 +19,7 @@ const VideoStreaming: React.FC = () => {
 
           <div className="project-links-top">
             <a
-              href="https://github.com/sunami09/streamly"
+              href="https://github.com/sunami09/youtube-backend"
               target="_blank"
               rel="noopener noreferrer"
               className="icon-link"
