@@ -1,12 +1,12 @@
-/* Main container - matching Amazon2025 design */
-.video-detail-page {
+/* Main container - matching VideoStreaming design */
+.tradient-detail-page {
   min-height: 100vh;
-  padding: 6rem 2rem 4rem;
+  padding: 8rem 2rem 4rem;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* Back button - identical to Amazon2025 */
+/* Back button - identical to VideoStreaming */
 .back-button {
   background: rgba(100, 255, 218, 0.1);
   border: 1px solid rgba(100, 255, 218, 0.3);
@@ -25,7 +25,7 @@
 }
 
 /* Content wrapper */
-.video-detail-content {
+.tradient-detail-content {
   color: white;
 }
 
@@ -39,7 +39,7 @@
   margin-bottom: 2rem;
 }
 
-/* Project name - matching company-name from Amazon2025 */
+/* Project name - matching company-name from original */
 .project-name {
   font-size: 2.5rem;
   color: #64ffda;
@@ -78,7 +78,7 @@
   font-weight: 600;
 }
 
-/* Lists - unified design matching Amazon2025 */
+/* Lists - unified design matching original */
 .summary-list,
 .solutions-list {
   list-style: none;
@@ -96,7 +96,7 @@
   position: relative;
 }
 
-/* Bullet point style - using same arrow as Amazon2025 */
+/* Bullet point style - using same arrow as original */
 .summary-list li::before,
 .solutions-list li::before {
   content: '▹';
@@ -121,7 +121,7 @@
   margin-bottom: 1rem;
 }
 
-/* Project sections - matching Amazon2025 */
+/* Project sections - matching original */
 .project-section {
   margin: 3rem 0;
   padding: 2rem;
@@ -147,24 +147,24 @@ code {
   font-size: 0.9em;
 }
 
-/* Diagram styling for video streaming specific content */
-.video-streaming-diagram {
+/* Diagram styling for tradient specific content (if needed in future) */
+.tradient-diagram {
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.02);
   padding: 1rem;
   margin: 1.5rem auto;
 }
 
-/* Special sections for upload and transcription pipelines */
-.upload-pipeline-section,
-.transcription-pipeline-section {
+/* Special sections for trading features */
+.trading-pipeline-section,
+.market-data-section {
   position: relative;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
-  .video-detail-page {
-    padding: 5rem 1rem 2rem;
+  .tradient-detail-page {
+    padding: 6rem 1rem 2rem;
   }
   
   .project-name {
@@ -186,7 +186,7 @@ code {
     margin-left: 0;
   }
   
-  .video-streaming-diagram {
+  .tradient-diagram {
     padding: 0.5rem;
   }
 }

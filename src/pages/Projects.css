@@ -32,7 +32,7 @@
 .featured-projects {
   display: flex;
   flex-direction: column;
-  gap: 8rem;
+  gap: 5rem;
 }
 
 .featured-project {
@@ -41,7 +41,7 @@
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
   gap: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* IMAGE – takes up more than half width */

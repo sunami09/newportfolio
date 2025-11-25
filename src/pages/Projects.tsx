@@ -28,29 +28,15 @@ const Projects: React.FC = () => {
     },
     {
       id: 2,
-      title: "Real-Time Collaborative Chat Application",
-      description: "A full-stack chat application built with Node.js and Express.js framework. The backend uses MongoDB to store messages and WebSockets to establish real-time communication between client and server. The frontend is built using React.js with Material UI components. WebSockets technology enables instant message delivery, providing a seamless chat experience for users.",
-      tech: ["React", "Node.js", "Express", "WebSockets", "MongoDB", "Material UI"],
-      github: "https://github.com/yourusername/chat-app",
-      demo: "https://your-chat-app.com",
-      image: "https://cdn.prod.website-files.com/616e938268c8f0a92cb2b540/61b3b5b10ea79b429da54b5d_best%20video%20editing%20apps%20creators%20swear%20by.jpg"
-    },
-    {
-      id: 3,
-      title: "E-Commerce Platform with Payment Integration",
-      description: "Built a scalable e-commerce platform featuring real-time inventory management, secure payment processing with Stripe integration, and personalized product recommendations using machine learning algorithms. Implemented advanced search and filtering capabilities with Elasticsearch.",
-      tech: ["TypeScript", "React", "Stripe", "PostgreSQL", "Redis", "Elasticsearch"],
-      github: "https://github.com/yourusername/ecommerce",
-      image: "https://via.placeholder.com/600x400/1a365d/64ffda?text=E-Commerce"
-    },
-    {
-      id: 4,
-      title: "Distributed Systems Monitoring Tool",
-      description: "Comprehensive monitoring system for distributed architectures with real-time alerting and performance analytics. Built custom dashboards for system health tracking, implemented log aggregation, and created automated incident response workflows. Supports monitoring of microservices, databases, and cloud infrastructure.",
-      tech: ["Go", "Prometheus", "Grafana", "Docker", "Kubernetes", "AWS"],
-      github: "https://github.com/yourusername/monitor",
-      image: "https://via.placeholder.com/600x400/1a365d/64ffda?text=System+Monitor"
-    }
+      title: "Cloud-Native Distributed Trading Platformn",
+      description: "This project is a trading application that lets users look up financial assets, view price charts, place trades through a broker, and interact with other users through a small community section. The app handles authentication, shows market data, and lets people make posts, comment, and react to content. Everything is built from scratch and connected through a custom backend system.",
+      tech: ["TypeScript", "Rate Limiting", "Horizontal Scaling", "Python"],
+      github: "https://github.com/sunami09/frontend-tradient",
+      demo: "https://tradient-eight.vercel.app/",
+      image: "/project-images/tradient.png",
+      route: '/projects/tradient',
+      },
+    
   ];
 
   return (

@@ -12,6 +12,7 @@ import Amazon2025 from './pages/experiences/Amazon2025';
 import Microsoft2025 from './pages/experiences/Microsoft2025';
 import Microsoft2024 from './pages/experiences/Microsoft2024';
 import BerkeleyLab2023 from './pages/experiences/BerkeleyLab2023';
+import Tradient from './pages/projects/Tradient';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/projects/weather" element={<div>Weather Dashboard Project Details</div>} />
           <Route path="/projects/monitor" element={<div>Distributed Systems Monitor Project Details</div>} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/projects/tradient" element={<Tradient />} />
         </Routes>
       </div>
     </Router>
