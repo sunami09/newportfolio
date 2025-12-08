@@ -15,7 +15,7 @@ const Home: React.FC = () => {
           The 'T' is non-existent. So is my work-life balance.
         </p>
         <p className="home-description">
-          Attention is all you need. I need mass attention.
+          Merge conflicts are just drama between branches.
         </p>
         <div className="home-buttons">
           <a href="/projects" className="btn btn-primary">View Projects</a>
