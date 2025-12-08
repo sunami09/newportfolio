@@ -12,10 +12,10 @@ const Home: React.FC = () => {
         </h1>
         <p className="home-subtitle">Software Engineer</p>
         <p className="home-description">
-          The "T" is non-existent.
+          The 'T' is non-existent. So is my work-life balance.
         </p>
         <p className="home-description">
-          Python is just pseudocode that happens to run
+          Attention is all you need. I need mass attention.
         </p>
         <div className="home-buttons">
           <a href="/projects" className="btn btn-primary">View Projects</a>

@@ -18,6 +18,16 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
+      title: "Semantic Image Search - Vector Similarity with CLIP & FAISS",
+      description: "A photo search application that uses OpenAI's CLIP model (ViT-B/32) to generate 512-dimensional embeddings from images and text queries. The system stores embeddings in a FAISS index with inner-product similarity for fast k-nearest-neighbor lookups. Features incremental index updates, L2 normalization for cosine similarity, and per user isolated indices. Backend runs on two Cloud Run microservices: one for indexing, one for search.",      tech: ["React", "TypeScript", "CLIP", "FAISS", "Cloud Run", "Firebase"],
+      github: "https://github.com/sunami09/semantic-image-search",
+      demo: "https://semantic-image-search-sunami.vercel.app/",
+      image: "/project-images/semantic-search.png",
+      route: '/projects/semanticSearch',
+    },
+
+    {
+      id: 2,
       title: "Video Streaming Platform with AI Conversational Assistant",
       description: "A full-stack video streaming platform featuring an AI-powered chatbot that maintains context-aware conversations about video content. Built with microservices distributed architecture for scalability and fault tolerance. Integrated OpenAI's Whisper API for automatic transcription, enabling the AI to understand and discuss video context. The assistant remembers previous conversation history and can answer questions about specific video moments, timestamps, and content details. Leverages Google Cloud services for deployment and infrastructure.",
       tech: ["React", "Node.js", "Firebase", "Whisper", "Google Cloud"],
@@ -27,7 +37,7 @@ const Projects: React.FC = () => {
       route: '/projects/videoStreaming'
     },
     {
-      id: 2,
+      id: 3,
       title: "Cloud-Native Distributed Trading Platformn",
       description: "This project is a trading application that lets users look up financial assets, view price charts, place trades through a broker, and interact with other users through a small community section. The app handles authentication, shows market data, and lets people make posts, comment, and react to content. Everything is built from scratch and connected through a custom backend system.",
       tech: ["TypeScript", "Rate Limiting", "Horizontal Scaling", "Python"],
@@ -35,7 +45,7 @@ const Projects: React.FC = () => {
       demo: "https://tradient-eight.vercel.app/",
       image: "/project-images/tradient.png",
       route: '/projects/tradient',
-      },
+    },
     
   ];
 

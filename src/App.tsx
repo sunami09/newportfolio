@@ -13,6 +13,7 @@ import Microsoft2025 from './pages/experiences/Microsoft2025';
 import Microsoft2024 from './pages/experiences/Microsoft2024';
 import BerkeleyLab2023 from './pages/experiences/BerkeleyLab2023';
 import Tradient from './pages/projects/Tradient';
+import SemanticSearch from './pages/projects/SemanticSearch';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/projects/monitor" element={<div>Distributed Systems Monitor Project Details</div>} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects/tradient" element={<Tradient />} />
+          <Route path="/projects/semanticSearch" element={<SemanticSearch />} />
         </Routes>
       </div>
     </Router>

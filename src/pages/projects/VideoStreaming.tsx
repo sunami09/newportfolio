@@ -47,6 +47,20 @@ const VideoStreaming: React.FC = () => {
         </div>
       </div>
 
+      {/* YOUTUBE VIDEO */}
+      <div className="video-container" style={{ marginTop: '2.5rem', marginBottom: '2rem' }}>
+        <iframe
+          width="100%"
+          height="500"
+          src="https://www.youtube.com/embed/740rN6yhicQ"
+          title="Video Streaming Platform Demo"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          style={{ borderRadius: '8px' }}
+        ></iframe>
+      </div>
+
       {/* SUMMARY - Now outside the box like Amazon2025 */}
       <div className="subsection" style={{ marginTop: '2.5rem', marginLeft: '0.5rem' }}>
         <h3 className="subsection-title">Summary:</h3>
