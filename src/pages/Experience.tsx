@@ -1,6 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Experience.css';
+import amazonLogo from '../assets/logos/Amazon_logo.svg.webp';
+import berkeleyLogo from '../assets/logos/Lawrence_Berkeley_National_Laboratory_logo.svg.png';
+import microsoftLogo from '../assets/logos/Microsoft_logo_(2012).svg.png';
 
 interface ExperienceCard {
   id: number;
@@ -30,7 +33,7 @@ const Experience: React.FC = () => {
         "Implemented design system",
         "Mentored junior developers"
       ],
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png",
+      logo: amazonLogo,
       detailPath: "/experience/amazon2025"
     },
     {
@@ -45,7 +48,7 @@ const Experience: React.FC = () => {
         "Integrated payment systems",
         "Automated deployments"
       ],
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
+      logo: microsoftLogo,
       detailPath: "/experience/microsoft2025"
     },
     {
@@ -60,7 +63,7 @@ const Experience: React.FC = () => {
         "Enhanced accessibility",
         "Client satisfaction 95%"
       ],
-      logo: "https://upload.wikimedia.org/wikipedia/commons/3/36/Lawrence_Berkeley_National_Laboratory_logo.svg",
+      logo: berkeleyLogo,
       detailPath: "/experience/berkeleylab2023"
     },
     {
@@ -75,7 +78,7 @@ const Experience: React.FC = () => {
         "Contributed to 5 projects",
         "Completed certifications"
       ],
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png",
+      logo: microsoftLogo,
       detailPath: "/experience/microsoft2024"
     }
   ];
